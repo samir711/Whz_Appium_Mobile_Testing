@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="26866" started-at="2018-12-17T19:01:17Z" finished-at="2018-12-17T19:01:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="26866" started-at="2018-12-17T19:01:17Z" finished-at="2018-12-17T19:01:44Z">
+      <class name="com.sampleApp.DesiredCaps">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.DesiredCaps@675d3402]" name="testApp" duration-ms="26843" started-at="2018-12-17T19:01:17Z" finished-at="2018-12-17T19:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApp -->
+      </class> <!-- com.sampleApp.DesiredCaps -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,40 @@
+package com.sampleApp;
+
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+
+public class DesiredCaps {
+	
+	public static AndroidDriver<MobileElement> driver;
+	
+	@Test
+	public void testApp() throws MalformedURLException {
+		
+		File app = new File("path of any apks");
+		
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("deviceName", "value");
+		caps.setCapability("uid", "value");
+		caps.setCapability("platformName", "Android");
+		caps.setCapability("plaformVersion", "value");
+		caps.setCapability("autoGrantPermissions", "true");
+		caps.setCapability("noReset", "true");
+		caps.setCapability("app", app.getAbsolutePath());;
+		
+		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"),caps);
+		
+		
+		
+		
+		
+		
+	}
+
+}
