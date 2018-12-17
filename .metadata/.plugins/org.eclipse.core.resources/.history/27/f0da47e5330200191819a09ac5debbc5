@@ -15,7 +15,7 @@ public class LauchingCalculatorWithAppInfo {
 	public static AndroidDriver<MobileElement> driver;
 	
 	@Test
-	public void LauchCalculatorApp() throws MalformedURLException, InterruptedException {
+	public void LauchCalculatorApp() throws MalformedURLException {
 		
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("deviceName", "virusnet-mate82");
@@ -26,12 +26,8 @@ public class LauchingCalculatorWithAppInfo {
 		caps.setCapability("noReset", "true");
 		
 		
-		caps.setCapability("appPackage", "com.android.calculator2");
-		caps.setCapability("appActivity", "com.android.calculator2.Calculator");
 		
 		driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"),caps);
-		
-		Thread.sleep(4000);
 	}
 	
 	

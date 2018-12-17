@@ -24,8 +24,6 @@ public class LauchingCalculatorWithAppInfo {
 		caps.setCapability("plaformVersion", "8.0");
 		caps.setCapability("autoGrantPermissions", "false");
 		caps.setCapability("noReset", "true");
-		
-		
 		caps.setCapability("appPackage", "com.android.calculator2");
 		caps.setCapability("appActivity", "com.android.calculator2.Calculator");
 		

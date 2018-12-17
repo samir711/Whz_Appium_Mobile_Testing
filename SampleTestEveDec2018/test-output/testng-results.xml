@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26866" started-at="2018-12-17T19:01:17Z" finished-at="2018-12-17T19:01:44Z">
+  <suite name="Default suite" duration-ms="10981" started-at="2018-12-17T19:44:15Z" finished-at="2018-12-17T19:44:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26866" started-at="2018-12-17T19:01:17Z" finished-at="2018-12-17T19:01:44Z">
-      <class name="com.sampleApp.DesiredCaps">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.DesiredCaps@675d3402]" name="testApp" duration-ms="26843" started-at="2018-12-17T19:01:17Z" finished-at="2018-12-17T19:01:44Z">
+    <test name="Default test" duration-ms="10981" started-at="2018-12-17T19:44:15Z" finished-at="2018-12-17T19:44:26Z">
+      <class name="com.sampleApp.LauchingCalculatorWithAppInfo">
+        <test-method status="PASS" signature="LauchCalculatorApp()[pri:0, instance:com.sampleApp.LauchingCalculatorWithAppInfo@29ee9faa]" name="LauchCalculatorApp" duration-ms="9960" started-at="2018-12-17T19:44:15Z" finished-at="2018-12-17T19:44:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testApp -->
-      </class> <!-- com.sampleApp.DesiredCaps -->
+        </test-method> <!-- LauchCalculatorApp -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.sampleApp.LauchingCalculatorWithAppInfo@29ee9faa]" name="quit" is-config="true" duration-ms="991" started-at="2018-12-17T19:44:25Z" finished-at="2018-12-17T19:44:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.sampleApp.LauchingCalculatorWithAppInfo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
