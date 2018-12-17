@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sampleApp.DesiredCaps">
+      <class name="com.sampleApp.LauchAitelAppWithApiExtractor">
         <methods>
-          <include name="testApp"/>
+          <include name="LauchAirtelApp"/>
+          <include name="quit"/>
         </methods>
-      </class> <!-- com.sampleApp.DesiredCaps -->
+      </class> <!-- com.sampleApp.LauchAitelAppWithApiExtractor -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
