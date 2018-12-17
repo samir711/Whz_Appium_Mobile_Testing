@@ -1,0 +1,33 @@
+from Whizdom Trainings to everyone:
+onssofts@gmail.com
+from Whizdom Trainings to everyone:
+onssofts@gmail.com
+from Whizdom Trainings to everyone:
+https://apkpure.com/smart-contact-manager/techathalon.com.smartcontactmanager
+from Whizdom Trainings to everyone:
+https://drive.google.com/file/d/1uewWdRak3Y7hBgpXn_hspnUn_WXb3jD9/view?usp=sharing
+from Whizdom Trainings to everyone:
+File app=new File("D:\\MobileAutomation\\Apks\\ContactManager.apk");
+        
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("deviceName", "moto g6");
+        caps.setCapability("udid", "ZF622343X9"); // Give Device ID of your
+        caps.setCapability("platformName", "Android");
+        caps.setCapability("platformVersion", "8.0.0");
+        caps.setCapability("autoGrantPermissions", "true");
+        caps.setCapability("noReset", "true");
+        caps.setCapability("app", app.getAbsolutePath());
+        
+        //caps.setCapability("appPackage", "value of package");
+        //caps.setCapability("appActivity", "value of activity");
+        
+        
+        /*caps.setCapability("app", app.getAbsolutePath());
+        caps.setCapability("autoGrantPermissions", "true");
+        caps.setCapability("noReset", "true");
+        */// Instantiate Appium Driver
+            driver = new AndroidDriver<MobileElement>(new URL(
+                    "http://0.0.0.0:4723/wd/hub"), caps);
+            
+            // implicit wait
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit

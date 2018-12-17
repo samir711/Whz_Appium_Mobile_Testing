@@ -1,0 +1,22 @@
+caps.setCapability("appPackage", "com.google.android.apps.maps");
+caps.setCapability("appActivity", "com.google.android.maps.MapsActivity");
+
+Apk extractor----> meher
+Apk info------> Kenumir
+
+
+@AfterTest
+	public void quit() {
+		driver.quit();
+	}
+	
+	
+adb pull /storage/emulated/0/ExtractedApks/ .
+
+D:\extractedapk>adb pull /storage/emulated/0/ExtractedApks/ .
+
+how-to-access-storage-emulated-0
+
+
+
+https://stackoverflow.com/questions/31399122/how-to-access-storage-emulated-0
