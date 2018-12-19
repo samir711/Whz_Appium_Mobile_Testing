@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12207" started-at="2018-12-17T20:08:49Z" finished-at="2018-12-17T20:09:01Z">
+  <suite name="Default suite" duration-ms="31654" started-at="2018-12-19T12:47:04Z" finished-at="2018-12-19T12:47:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12207" started-at="2018-12-17T20:08:49Z" finished-at="2018-12-17T20:09:01Z">
-      <class name="com.sampleApp.LauchAitelAppWithApiExtractor">
-        <test-method status="PASS" signature="LauchAirtelApp()[pri:0, instance:com.sampleApp.LauchAitelAppWithApiExtractor@29ee9faa]" name="LauchAirtelApp" duration-ms="11120" started-at="2018-12-17T20:08:49Z" finished-at="2018-12-17T20:09:00Z">
+    <test name="Default test" duration-ms="31654" started-at="2018-12-19T12:47:04Z" finished-at="2018-12-19T12:47:36Z">
+      <class name="com.sampleApp.AutomateContactManagerApp">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.AutomateContactManagerApp@29ee9faa]" name="testApp" duration-ms="30553" started-at="2018-12-19T12:47:04Z" finished-at="2018-12-19T12:47:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LauchAirtelApp -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.sampleApp.LauchAitelAppWithApiExtractor@29ee9faa]" name="quit" is-config="true" duration-ms="1065" started-at="2018-12-17T20:09:00Z" finished-at="2018-12-17T20:09:01Z">
+        </test-method> <!-- testApp -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.sampleApp.AutomateContactManagerApp@29ee9faa]" name="quit" is-config="true" duration-ms="1072" started-at="2018-12-19T12:47:35Z" finished-at="2018-12-19T12:47:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-      </class> <!-- com.sampleApp.LauchAitelAppWithApiExtractor -->
+      </class> <!-- com.sampleApp.AutomateContactManagerApp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
