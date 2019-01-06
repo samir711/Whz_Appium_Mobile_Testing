@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37399" started-at="2019-01-06T10:51:35Z" finished-at="2019-01-06T10:52:13Z">
+  <suite name="Default suite" duration-ms="10974" started-at="2019-01-06T11:25:12Z" finished-at="2019-01-06T11:25:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37399" started-at="2019-01-06T10:51:35Z" finished-at="2019-01-06T10:52:13Z">
-      <class name="com.sampleApp.SimpleTouchAction">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.SimpleTouchAction@46d56d67]" name="testApp" duration-ms="36347" started-at="2019-01-06T10:51:35Z" finished-at="2019-01-06T10:52:12Z">
+    <test name="Default test" duration-ms="10974" started-at="2019-01-06T11:25:12Z" finished-at="2019-01-06T11:25:23Z">
+      <class name="com.sampleApp.ContactManager">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.ContactManager@29ee9faa]" name="testApp" duration-ms="9949" started-at="2019-01-06T11:25:12Z" finished-at="2019-01-06T11:25:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.sampleApp.SimpleTouchAction@46d56d67]" name="quitDriver" is-config="true" duration-ms="1034" started-at="2019-01-06T10:52:12Z" finished-at="2019-01-06T10:52:13Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.sampleApp.ContactManager@29ee9faa]" name="quitDriver" is-config="true" duration-ms="1001" started-at="2019-01-06T11:25:22Z" finished-at="2019-01-06T11:25:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- com.sampleApp.SimpleTouchAction -->
+      </class> <!-- com.sampleApp.ContactManager -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
