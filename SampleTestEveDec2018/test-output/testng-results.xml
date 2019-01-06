@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13922" started-at="2019-01-06T07:56:07Z" finished-at="2019-01-06T07:56:21Z">
+  <suite name="Default suite" duration-ms="37399" started-at="2019-01-06T10:51:35Z" finished-at="2019-01-06T10:52:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13922" started-at="2019-01-06T07:56:07Z" finished-at="2019-01-06T07:56:21Z">
-      <class name="com.sampleApp.Arch">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.Arch@29ee9faa]" name="testApp" duration-ms="12917" started-at="2019-01-06T07:56:07Z" finished-at="2019-01-06T07:56:20Z">
+    <test name="Default test" duration-ms="37399" started-at="2019-01-06T10:51:35Z" finished-at="2019-01-06T10:52:13Z">
+      <class name="com.sampleApp.SimpleTouchAction">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.sampleApp.SimpleTouchAction@46d56d67]" name="testApp" duration-ms="36347" started-at="2019-01-06T10:51:35Z" finished-at="2019-01-06T10:52:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.sampleApp.Arch@29ee9faa]" name="quit" is-config="true" duration-ms="980" started-at="2019-01-06T07:56:20Z" finished-at="2019-01-06T07:56:21Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.sampleApp.SimpleTouchAction@46d56d67]" name="quitDriver" is-config="true" duration-ms="1034" started-at="2019-01-06T10:52:12Z" finished-at="2019-01-06T10:52:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.sampleApp.Arch -->
+        </test-method> <!-- quitDriver -->
+      </class> <!-- com.sampleApp.SimpleTouchAction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

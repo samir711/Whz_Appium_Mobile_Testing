@@ -19,7 +19,6 @@ INDEX VERSION 1.130+D:\eclipseproject\Whz_Appium_Mobile_Testing\.metadata\.plugi
 2941762184.index
 3759876935.index
 1952388078.index
-1701939323.index
 35556008.index
 951022815.index
 1389696189.index
