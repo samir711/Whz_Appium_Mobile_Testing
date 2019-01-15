@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24068" started-at="2019-01-15T11:27:07Z" finished-at="2019-01-15T11:27:31Z">
+  <suite name="Default suite" duration-ms="8719" started-at="2019-01-15T15:37:04Z" finished-at="2019-01-15T15:37:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24068" started-at="2019-01-15T11:27:07Z" finished-at="2019-01-15T11:27:31Z">
-      <class name="com.touchevent.DragSort">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:com.touchevent.DragSort@5b275dab]" name="testApp" duration-ms="22891" started-at="2019-01-15T11:27:07Z" finished-at="2019-01-15T11:27:30Z">
+    <test name="Default test" duration-ms="8719" started-at="2019-01-15T15:37:04Z" finished-at="2019-01-15T15:37:12Z">
+      <class name="com.touchevent.MultiTouchDemo">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:com.touchevent.MultiTouchDemo@475530b9]" name="testApp" duration-ms="7649" started-at="2019-01-15T15:37:04Z" finished-at="2019-01-15T15:37:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.touchevent.DragSort@5b275dab]" name="quitDriver" is-config="true" duration-ms="1154" started-at="2019-01-15T11:27:30Z" finished-at="2019-01-15T11:27:31Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.touchevent.MultiTouchDemo@475530b9]" name="quit" is-config="true" duration-ms="1042" started-at="2019-01-15T15:37:11Z" finished-at="2019-01-15T15:37:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- com.touchevent.DragSort -->
+        </test-method> <!-- quit -->
+      </class> <!-- com.touchevent.MultiTouchDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
