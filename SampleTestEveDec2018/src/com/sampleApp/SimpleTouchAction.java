@@ -13,6 +13,9 @@ import org.testng.annotations.Test;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
@@ -35,7 +38,7 @@ public class SimpleTouchAction {
 		caps.setCapability("platformVersion", "8.0.0");
 		caps.setCapability("app", app.getAbsolutePath());
 		caps.setCapability("autoGrantPermissions", "true");
-		caps.setCapability("noReset", "true");
+		caps.setCapability("noReset", "false");
 	
 
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
@@ -46,9 +49,16 @@ public class SimpleTouchAction {
 		Thread.sleep(4000);
 		driver.findElement(By.xpath("//android.widget.TextView[@text=\"2 - 5 Lakh\"]")).click();
 		Thread.sleep(5000);
-		/*driver.findElement(By.id("com.girnarsoft.cardekho:id/edit_text_search")).sendKeys("New Delhi");
+		driver.findElement(By.id("com.girnarsoft.cardekho:id/edit_text_search")).sendKeys("Pune");
 		Thread.sleep(5000);
-		driver.pressKeyCode(AndroidKeyCode.ENTER);*/
+	//	driver.pressKey(new KeyEvent(AndroidKey.ENTER));
+		driver.pressKeyCode(AndroidKeyCode.ENTER);
+		/*
+		driver.pressKeyCode(AndroidKeyCode.ENTER);
+		or
+		
+		*
+		*/
 		
 		//driver.swipe();
 		//new TouchAction<>(driver).longPress(longPressOptions).moveTo().release
