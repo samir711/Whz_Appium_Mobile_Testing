@@ -2,8 +2,13 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.net.URL"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="io.appium.java_client.android.nativekey.KeyEvent"/>
+<fullyQualifiedTypeName name="io.appium.java_client.android.nativekey.AndroidKey"/>
+<fullyQualifiedTypeName name="io.appium.java_client.android.AndroidKeyCode"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
 </qualifiedTypeNameHistroy>
