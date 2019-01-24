@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteName">
+	
+	
+	<test name="Sample Test" allow-return-values="true">
+		<classes>
+			<class name="com.appium.maven.mobile.hybrid.SampleTest" />
+		</classes>
+	</test>
+	
+	<test name="Exp Test" allow-return-values="true">
+		<classes>
+			<class name="com.appium.maven.mobile.hybrid.TestExp" />
+		</classes>
+	</test>
+	
+	<test name="Test Inc" allow-return-values="true">
+		<classes>
+			<class name="com.appium.maven.mobile.hybrid.TestInc" />
+		</classes>
+	</test>
+	
+</suite>
+

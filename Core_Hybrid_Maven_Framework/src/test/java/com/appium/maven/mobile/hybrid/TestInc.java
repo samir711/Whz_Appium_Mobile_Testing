@@ -1,5 +1,7 @@
 package com.appium.maven.mobile.hybrid;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -8,46 +10,42 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class SampleTest {
-
-	private ExtentReports report;
+public class TestInc {
 	private Driverscript ds;
+	private ExtentReports report;
 	private ExtentTest test;
-	
-	// Execute the test using maven test or maven verify works. Directly running through
-	// as testng class not working in eclipse but working in Intellij
-	
+
+	// CTRL+SHIFT+F ---> to align code
 	@Test
-	public void testApp( ) {
-		
+	public void testApp() {
 		
 		report = ExtentManager.getInstance();
-		test = report.startTest("Test App");
+		test = report.startTest("TestInc");
+		test.log(LogStatus.INFO, "Strting the Test");
 		ds = new Driverscript(test);
-		test.log(LogStatus.INFO, "Starting the test");
 		try {
-		ds.executekeyword("ContactManager");
-		}
-		catch(Exception e) {
-			System.out.println(e.getMessage());
+			ds.executekeyword("TC2");
+		} catch (MalformedURLException e) {
+		
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
 		}
 		test.log(LogStatus.INFO, "Ending the test");
-		
+
 	}
-	
+
 	@AfterMethod
 	public void quit() {
 		if(null!=ds)
-		ds.getKeywords().closeapp();
-	
-		if(null!=report) {	
+			ds.getKeywords().closeapp();	
+		if(null!=report && null!=test) {
 		report.endTest(test);
 		report.flush();
-
 		}
-
+	   
+		
 	}
-
-	
 
 }
