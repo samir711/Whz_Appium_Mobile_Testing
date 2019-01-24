@@ -1,57 +1,60 @@
 package com.appium.maven.mobile.hybrid;
 
-import com.appium.maven.mobile.hybrid.util.Constants;
-import com.appium.maven.mobile.hybrid.util.Xls_Reader;
+import java.net.MalformedURLException;
+
+import com.appium.maven.mobile.hybrid.util.ProjectConstants;
+import com.appium.maven.mobile.hybrid.util.XlsReader;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class Driverscript {
 	
-	public static void main(String[] args) {
+	static AppKeyword keywords;
+	ExtentTest test;
+	
+	public Driverscript(ExtentTest test) {
+		this.test=test;
+	}
+
+	public void executekeyword(String testUnderExecution) throws MalformedURLException, InterruptedException {
 		
 		String keywords_sheet = "keywords";
-		String testUnderExecution = "TC1";
-		AppKeywords appKeyword = new AppKeywords();
+		// testUnderExecution = "TC1";
+		keywords=new AppKeyword(test);
 		
-		Xls_Reader xls = new Xls_Reader(System.getProperty("user.dir")+"//data//Data.xlsx");
+		XlsReader xls = new XlsReader(System.getProperty("user.dir")+"//data//Data.xlsx");
 		
 		int rows = xls.getRowCount(keywords_sheet);
-		System.out.println("rows are ::" + rows);
+		test.log(LogStatus.INFO, "rows are ::" + rows);
 		
 		for(int rNum=2;rNum<=rows;rNum++) {
 			
-			String tcid = xls.getCellData(keywords_sheet, Constants.TCID_COL, rNum);
-			if(tcid.equalsIgnoreCase(testUnderExecution)) {
-				String keyword = xls.getCellData(keywords_sheet, Constants.KEYWORD_COl, rNum);
-				String Object = xls.getCellData(keywords_sheet,Constants.OBJECT_COl, rNum);
-				String data = xls.getCellData(keywords_sheet, Constants.DATA_COl, rNum);
-	            System.out.println(tcid + "---"+ keyword + "---"+ Object+"---"+ data);
-				String result = "";
-	            if(keyword.equalsIgnoreCase("openapp")){
-					result = appKeyword.openapp();
-				}
-				else if(keyword.equalsIgnoreCase("click")) {
-					result = appKeyword.click();
-					
-				}
-				else if(keyword.equalsIgnoreCase("type")) {
-					result = appKeyword.type();
-					
-				}
-				else if(keyword.equalsIgnoreCase("verifyTest")) {
-					result = appKeyword.verifyTest();
-				}
-				else if(keyword.equalsIgnoreCase("AddContatct")) {
-					result = appKeyword.addContact();
-					
-				}
-				else if(keyword.equalsIgnoreCase("closeapp")) {
-					result = appKeyword.closeapp();
-					
-				}
-	            System.out.println("result is :: " + result);
+			String tcid = xls.getCellData(keywords_sheet, ProjectConstants.TCID_COL, rNum);
+			Boolean result = tcid.equalsIgnoreCase(testUnderExecution);
+			if(result) {
+				String keyword = xls.getCellData(keywords_sheet, ProjectConstants.KEYWORD_COL, rNum);
+				System.out.println(keyword);
+				String object = xls.getCellData(keywords_sheet,ProjectConstants.OBJECT_COL, rNum);
+				String dataKey = xls.getCellData(keywords_sheet, ProjectConstants.DATA_COL, rNum);
+	            String response=null;
+				if(keyword.equals("openapp"))
+				 response=keywords.openapp();
+				else if(keyword.equals("click"))
+					keywords.click(object);
+				else if(keyword.equals("type"))
+					keywords.type(object,dataKey);
+				else if(keyword.equals("verifyText"))
+					keywords.verifyTest(object,dataKey);
+				else if(keyword.equals("addContact"))
+					keywords.addContact();
+				test.log(LogStatus.PASS, tcid+"------"+keyword+"---------"+object+"----"+dataKey);
 			}
 			
 		}
 		
 	}
+	  public AppKeyword getKeywords() {
+		  return keywords;
+	  }
 
 }
